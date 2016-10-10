@@ -1,7 +1,7 @@
 {
-  "name": "jwt-auth-para-web-y-ionic",
+  "name": "Aerolinea Fundamentos",
   "version": "0.0.1",
-  "description": "loggin por medio de Oauth y jwt",
+  "description": "Back end para el proyecto del semestre de fundamentos de informacion",
   "main": "servidor/app.js",
   "cacheDirectories": [
     "bower_components "
@@ -26,6 +26,7 @@
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
     "cors": "^2.7.1",
+    "debug": "^2.2.0",
     "dotenv": "^2.0.0",
     "errorhandler": "^1.4.3",
     "express": "^4.14.0",
@@ -38,6 +39,7 @@
     "nodemailer": "^2.5.0",
     "nodemailer-sendgrid-transport": "^0.2.0",
     "nodemailer-smtp-transport": "^2.6.0",
+    "nodemon": "^1.11.0",
     "request": "^2.73.0",
     "sendgrid": "^3.0.8"
   }

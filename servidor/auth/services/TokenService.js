@@ -1,6 +1,6 @@
 'use strict';
 const jwt = require('jsonwebtoken');
-
+const debug = require("debug")('dev');
 class TokenService {
     constructor(headers) {
         this.token      = this._extractTokenFromHeaders(headers);
@@ -11,6 +11,8 @@ class TokenService {
     }
 
     static createToken(options, cb) {
+        console.log("hola")
+        debug('Hola debug');
         const payload = {
             profilePicture: options.user.profilePicture,
             firstName: options.user.firstName,
@@ -22,7 +24,7 @@ class TokenService {
         jwt.sign(payload, process.env.TOKEN_SECRET, {
             algorithm: 'HS256',
             expiresIn: options.expireTime || 1440 // expires in 24 hours
-        }, cb);
+        },cb);
     }
 
     getPayload() {

@@ -209,7 +209,7 @@ function reset(req, res, next) {
 }
 
 function generateToken(req, res, next) {
-    console.log("generando token en auth controller");
+    console.log("generando token en auth controller" + JSON.stringify(req.user));
     TokenService.createToken({user: req.user}, (err, token) => {
         if(err){
             console.log("error generando token en auth controller");
