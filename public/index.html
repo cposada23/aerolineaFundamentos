@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Passalo</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/pnotify/dist/pnotify.css">
+    <link rel="stylesheet" href="bower_components/pnotify/dist/pnotify.buttons.css">
+    <link rel="stylesheet" href="public/app/css/main.css">
+</head>
+<body ng-app="passalo">
+    <div class ="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"  style="background-color: #00b3ee">Div 1</div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"  style="background-color: #810f07">Div 2</div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"  style="background-color: #d1ee13">Div 3</div>
+    </div>
+
+    <div ui-view></div>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/satellizer/satellizer.min.js"></script>
+    <script src="bower_components/pnotify/dist/pnotify.js"></script>
+    <script src="bower_components/pnotify/dist/pnotify.confirm.js"></script>
+    <script src="bower_components/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="bower_components/angular-pnotify/src/angular-pnotify.js"></script>
+    <script src="bower_components/spin.js/spin.min.js"></script>
+    <script src="bower_components/angular-spinner/angular-spinner.min.js"></script>
+
+
+    <!--                                          APP                                           -->
+    <script type="text/javascript" src="/public/app/app.js"></script>
+        <!-- Modals -->
+            <script type="text/javascript" src="/public/app/modal/profile/profileModal.js"></script>
+
+        <!-- fin Modals -->
+        <!--                 Auth            -->
+            <!--      Modals -->
+                <script type="text/javascript" src="/public/app/auth/modals/login/lognModalCtrl.js"></script>
+                <script type="text/javascript" src="/public/app/auth/modals/singup/singupModalCtrl.js"></script>
+            <!--     Controllers Auth -->
+                <!-- Login -->
+                <script type="text/javascript" src="/public/app/auth/login/loginCtrl.js"></script>
+                <!-- sigup -->
+                <script type="text/javascript" src="/public/app/auth/singup/singupCtrl.js"></script>
+                <!-- Forgot -->
+                <script type="text/javascript" src="/public/app/auth/forgot/forgotCtrl.js"></script>
+                <!-- Reset  -->
+                <script type="text/javascript" src="/public/app/auth/reset/resetCtrl.js"></script>
+            <!--     Services Auth    -->
+                <script type="text/javascript" src="/public/app/services/userService.js"></script>
+            <!--     Directives       -->
+                <script type="text/javascript" src="/public/app/directives/passwordMatch.js"></script>
+        <!--               fin Auth          -->
+
+
+        <!--               HOME             -->
+            <!--  Controller        --->
+                <script type="text/javascript" src="/public/app/home/homeCtrl.js"></script>
+
+</body>
+</html>
