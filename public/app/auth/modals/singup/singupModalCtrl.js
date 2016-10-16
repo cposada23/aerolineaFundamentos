@@ -1,6 +1,6 @@
 (function () {
     angular
-        .module('passalo')
+        .module('aerolinea')
         .controller('singupModalCtrl',singupModalCtrl);
 
     singupModalCtrl.$inject = ['$rootScope','$scope','$uibModalInstance','UserService','usSpinnerService','notificationService'];

@@ -1,6 +1,6 @@
 (function () {
     angular
-        .module('passalo')
+        .module('aerolinea')
         .controller('profileModal',profileModal);
         profileModal.$inject = ['$uibModalInstance','$scope','user'];
 

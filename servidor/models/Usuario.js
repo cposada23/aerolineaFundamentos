@@ -3,14 +3,12 @@ const crypto = require('crypto');
 
 //Esquema de usuario 
 const userSchema = new mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    email: { type: String, unique: true },
+    nombre: String,
+    apellidos: String,
+    email: { type: String, unique: true ,lowercase: true},
     profilePicture: String,
-    pictures:[{type:String}],
     hashedPassword:String,
     salt: String,
-    displayName: String,
     rol: {type:String, default:'user'},
     resetToken: String,
    
@@ -61,4 +59,4 @@ userSchema.methods = {
 
 };
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Usuarios', userSchema);

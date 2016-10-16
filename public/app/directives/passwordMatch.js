@@ -1,6 +1,6 @@
 (function () {
     angular
-        .module('passalo')
+        .module('aerolinea')
         .directive('passwordMatch', passwordMatch);
 
     function passwordMatch() {

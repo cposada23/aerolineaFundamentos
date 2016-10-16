@@ -1,5 +1,5 @@
 {
-  "name": "Aerolinea Fundamentos",
+  "name": "Aerolinea",
   "version": "0.0.1",
   "description": "Back end para el proyecto del semestre de fundamentos de informacion",
   "main": "servidor/app.js",

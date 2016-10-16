@@ -1,6 +1,6 @@
 (function () {
     angular
-        .module('passalo')
+        .module('aerolinea')
         .controller('forgotCtrl',forgotCtrl);
 
     forgotCtrl.$inject = ['$http'];

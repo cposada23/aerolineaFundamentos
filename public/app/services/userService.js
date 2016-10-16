@@ -1,9 +1,7 @@
 (function(){
     "use strict";
-
     angular
-        .module('passalo')
-        .factory('UserService', UserService);
+        .module('aerolinea').factory('UserService', UserService);
 
     function UserService($rootScope, $auth ,notificationService) {
         var userData = $auth.getPayload();
@@ -18,11 +16,6 @@
             },
             signup: function (user) {
                 $auth.signup(user).then(this.successSingup).catch(this.failedSingup);
-            },
-            socialSingup: function (provider) {
-              $auth.authenticate(provider)
-                  .then(this.successSocialSingup)
-                  .catch(this.failedSocialSingup);
             },
             authenticate: function(provider) {
                 $auth
@@ -48,11 +41,6 @@
                 notificationService.success('Autenticado');
                 $rootScope.$emit('userSingUp', {data: userData});
             },
-            successSocialSingup: function () {
-                userData = $auth.getPayload();
-                notificationService.success('Autenticado');
-                $rootScope.$emit('userSingUp', {data: userData});
-            },
             failedAuth: function(error) {
                 userData = undefined;
                 $rootScope.$emit('userFailedLogin' ,{error:error.data});
@@ -61,11 +49,6 @@
                 userData = undefined;
                 $rootScope.$emit('userFailedSingUp', {error: response.data});
             },
-            failedSocialSingup: function () {
-                userData = undefined;
-                $rootScope.$emit('userFailedSingUp', {error: response});
-
-            }
         }
     }
 })();

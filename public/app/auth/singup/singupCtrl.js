@@ -1,6 +1,6 @@
 (function () {
     angular
-        .module("passalo")
+        .module("aerolinea")
         .controller("singupCtrl", singupCtrl);
 
     singupCtrl.$inject = ['$rootScope', 'UserService', 'usSpinnerService','notificationService','$state'];

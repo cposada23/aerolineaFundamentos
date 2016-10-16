@@ -10,10 +10,7 @@
                     <div ng-repeat="error in messages.error">{{error.msg}}</div>
                 </div>
                 <form method="post" ng-submit="signup()" name="signupForm" novalidate >
-                    <div class="form-group has-feedback" >
-                        <input class="form-control input-lg" type="text" name="displayName" ng-model="user.displayName" placeholder="userName" required autofocus>
-                        <span  class="ion-person form-control-feedback"></span>
-                    </div>
+                    
 
                     <div class="form-group has-feedback">
                         <input class="form-control input-lg" type="email" id="email" name="email" ng-model="user.email" placeholder="email" required>
@@ -21,12 +18,12 @@
                     </div>
 
                     <div class="form-group has-feedback" >
-                        <input class="form-control input-lg" type="text" id="name" name="name" ng-model="user.firstName" placeholder="Nombre" required>
+                        <input class="form-control input-lg" type="text" id="name" name="name" ng-model="user.nombre" placeholder="Nombre" required>
                         <span  class="ion-at form-control-feedback"></span>
                     </div>
 
                     <div class="form-group has-feedback" >
-                        <input class="form-control input-lg" type="text" id="apellido" name="apellido" ng-model="user.lastName" placeholder="apellido" required>
+                        <input class="form-control input-lg" type="text" id="apellido" name="apellido" ng-model="user.apellidos" placeholder="apellido" required>
                         <span  class="ion-at form-control-feedback"></span>
 
                     </div>

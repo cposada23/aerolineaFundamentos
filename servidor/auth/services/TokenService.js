@@ -11,7 +11,7 @@ class TokenService {
     }
 
     static createToken(options, cb) {
-        console.log("hola")
+     
         debug('Hola debug');
         const payload = {
             profilePicture: options.user.profilePicture,

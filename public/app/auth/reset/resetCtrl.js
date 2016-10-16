@@ -1,6 +1,6 @@
 (function () {
     angular
-        .module('passalo')
+        .module('aerolinea')
         .controller('resetCtrl', resetCtrl);
     resetCtrl.$inject = ['$http','$stateParams'];
     function resetCtrl($http, $stateParams) {

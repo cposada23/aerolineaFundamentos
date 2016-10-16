@@ -4,11 +4,8 @@
  * Module dependencies.
  */
 const express       = require('express');
-const compression   = require('compression');
 const dotenv        = require('dotenv');
-const path          = require('path');
 const mongoose      = require('mongoose');
-
 
 /**
  * Cargar las variables de entorno del archivo .env, donde estan las keys y contraseñas
@@ -27,8 +24,6 @@ const app = express();
 
 /**
  * Conectar a MongoDB.
- *
- *
  */
 var options = { 
     server: {

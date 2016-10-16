@@ -1,6 +1,6 @@
 /*(function () {
     angular
-        .module("passalo")
+        .module("aerolinea")
         .controller('loginCtrl', loginCtrl);
 
     loginCtrl.$inject = ['$rootScope','UserService', 'notificationService', 'usSpinnerService','$uibModal'];

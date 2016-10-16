@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Module dependencies.
+ * Dependencias del modulo.
  */
 const express          = require('express');
 const compression      = require('compression'); // Comprecion del response, mayor eficiencia a la hora de transmitir datos
@@ -19,7 +19,6 @@ const TokenService  = require('../auth/services/TokenService');
 const config        = require('./environment');
 
 module.exports = function (app) {
-
 
     /* Puerto en el que corre la aplicació */
     app.set('port', process.env.PORT || 3000);
@@ -43,8 +42,6 @@ module.exports = function (app) {
 
     app.use(expressValidator());
     app.use(bodyParser.urlencoded({extended: true}));
-   
-
 
     /**
      * Forzar HTTPS  en heroku
@@ -83,6 +80,8 @@ module.exports = function (app) {
      */
     app.use('/public', express.static(path.join(config.root, '/public')));
     app.use('/bower_components', express.static(path.join(config.root,'/bower_components')));
+    
+    
     //app.use('/node_modules' , express.static(path.join(config.root, '/node_modules')));
     app.use(errorHandler());
 

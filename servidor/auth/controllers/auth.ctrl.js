@@ -9,8 +9,6 @@ const Email         = require('./email.ctrl');
 const User = require('../../models/Usuario');
 
 
-
-
 module.exports = {
     localAuth,
     localsingup,
